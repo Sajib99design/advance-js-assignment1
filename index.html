@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +8,17 @@
   <script defer src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
-  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+<body class="bg-gray-400 min-h-screen flex items-center justify-center">
+
+  <div class="bg-gray-200 p-6 rounded-lg shadow-lg w-full max-w-md">
 
     <h1 class="text-2xl font-bold mb-4 text-center">To-Do List</h1>
 
     <div class="flex mb-4">
       <input id="todo-input" type="text" placeholder="Add new task"
         class="flex-1 border border-gray-300 p-2 rounded-l focus:outline-none">
-      <button id="add-btn" class="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-600 cursor-pointer">Add</button>
+      <button id="add-btn" class="bg-blue-500 text-white px-4 rounded-r bg-orange-700 hover:bg-orange-600 cursor-pointer">Add</button>
     </div>
 
     <ul id="todo-list" class="space-y-2"></ul>
@@ -26,6 +28,7 @@
 
 
   <!-- script file -->
-   <script type="module" src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
