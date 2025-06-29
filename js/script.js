@@ -26,7 +26,7 @@ function addTodoItem(text) {
     //   edit btn
     const editButton = document.createElement('button');
     editButton.textContent = "Edit";
-    editButton.className = "text-yellow-600 hover:underline cursor-pointer";
+    editButton.className = "text-blue-600 hover:underline cursor-pointer";
     editButton.onclick = () => editTodoItem(span, editButton);
 
     //   delete btn
