@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>To-Do List</title>
-  <script defer src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -18,7 +17,8 @@
     <div class="flex mb-4">
       <input id="todo-input" type="text" placeholder="Add new task"
         class="flex-1 border border-gray-300 p-2 rounded-l focus:outline-none">
-      <button id="add-btn" class="bg-blue-500 text-white px-4 rounded-r bg-orange-700 hover:bg-orange-600 cursor-pointer">Add</button>
+      <button id="add-btn"
+        class="bg-blue-500 text-white px-4 rounded-r bg-orange-700 hover:bg-orange-600 cursor-pointer">Add</button>
     </div>
 
     <ul id="todo-list" class="space-y-2"></ul>
