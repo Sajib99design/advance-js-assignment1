@@ -42,4 +42,26 @@ function addTodoItem(text) {
     li.appendChild(buttons);
 
     todoList.appendChild(li);
+};
+
+
+// edit methods
+function editTodoItem(span, btn) {
+    const oldText = span.textContent;
+    const input = document.createElement('input');
+    input.value = oldText;
+    input.className = "border px-1 py-0.5 rounded w-full";
+
+    span.replaceWith(input);
+    btn.textContent = "Save";
+
+    btn.onclick = () => {
+        if (input.value.trim() !== "") {
+            const newSpan = document.createElement('span');
+            newSpan.textContent = input.value.trim();
+            input.replaceWith(newSpan);
+            btn.textContent = "Edit";
+            btn.onclick = () => editTodoItem(newSpan, btn);
+        }
+    };
 }
